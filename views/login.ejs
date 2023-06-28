@@ -1,0 +1,16 @@
+<%- include("templates/encabezado") %>
+<% -include("templates/menu") %>
+<form action="/validar" method="post" id="formmulario">
+    <div>
+        <input type="text" name="usuario" id="usuario" placeholder="usuario" autofocus>
+        <span id="mensajeUsuario"></span>
+    </div>
+    <div>
+        <input type="text" name="password" id="password" placeholder="password" autofocus>
+        <span id="mensajePassword"></span>
+    </div>
+    <div>
+        <button type="submit">Iniciar sesion</button>
+    </div>
+</form>
+<%- include("templates/pie") %>
